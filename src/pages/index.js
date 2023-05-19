@@ -57,7 +57,7 @@ export default function Home() {
     </div>
   </section>
   <section className={styles.feature}>
-    <img className={styles.img} height={500} width={1200} src="advisor.png" alt="filterelective.png" />
+    <img className={styles.img} height={500} width={1200} src="advisor2.png" alt="filterelective.png" />
     <div style={{marginRight: '1rem'}}>
       <h2 className={styles['feature-h3']}>Advisor Connect: Empowering Guidance at Your Fingertips</h2>
       <p className={styles['feature-p']}>Bridge the gap between students and advisors with Advisor Connect. This intuitive feature provides advisors with a comprehensive list of students seeking advice. It empowers advisors to step in and provide invaluable guidance with just a click. Enhance student success, foster supportive relationships, and create a vibrant learning community with UWI Degree Tracker.</p>
