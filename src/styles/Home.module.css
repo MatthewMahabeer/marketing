@@ -89,16 +89,61 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2em 0;
+  margin: 2rem 2rem;
   padding: 2em;
   background: #f9f9f9;
 }
 
 .feature .img {
-  width: 200px;
+  width: 900px;
+  height: 500px;
   margin-right: 2em;
+}
+
+.feature-h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #4169e1;
+  text-align: center;
+}
+
+.feature-p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 1rem;
+  color: black;
+  text-align: center;
 }
 
 .feature:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+.about-us-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 0;
+  text-align: center;
+  background-color: #2c3e50; /*dark blue color for contrast*/
+  color: #ecf0f1; /*light grey for readable text*/
+  font-family: "Roboto", sans-serif;
+}
+
+.about-us-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "Noto", serif;
+}
+
+.about-us-content {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 70%; /* To create a margin on left and right side of the content */
 }

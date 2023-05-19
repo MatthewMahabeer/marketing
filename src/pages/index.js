@@ -22,26 +22,53 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
       <h1 className={styles.title}>Control Your Path To Graduation</h1>
-      <div className={styles['svg-container']}  ref={scrollTargetRef} onClick={handleScroll} id={styles['svg-id']}>
+      <div className={styles['svg-container']} onClick={handleScroll} id={styles['svg-id']}>
       <svg className={styles.svg} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
 </svg>
  
   </div>
     </main>
-    <div className={styles.header}>
+    <div className={styles.header} ref={scrollTargetRef}>
       UWI Degree Tracker
     </div>
     <div className={styles.para}>
-    Introducing UWI Degree Tracker - Revolutionizing the way you manage your academic journey. With our pioneering application, you can say goodbye to manual degree tracking and embrace the convenience of real-time automation. Our tool provides precise course tracking, personalized recommendations, and visual progress charts, ensuring you are always one step ahead in your educational path. Dive into seamless organization and real-time insights with UWI Degree Tracker, the intelligent solution that makes degree management effortless and efficient. Keep track, stay on course, and reach your academic goals with confidence.
+    Introducing UWI Degree Tracker - Revolutionizing the way you manage your academic journey. With our pioneering application, you can say goodbye to manual degree tracking and embrace the convenience of real-time automation. Our tool provides precise course tracking, personalized recommendations, and visual progress, ensuring you are always one step ahead in your educational path.
     </div>
-    <section className="feature">
-    <img className='img' src="student_home.png" alt="Student Home" />
-    <div>
-      <h2>Feature Title 1</h2>
-      <p>Feature Description 1...</p>
+    <section className={styles.feature}>
+    <img className={styles.img} height={500} width={900} src="student_home.png" alt="Courses Home" />
+    <div style={{marginRight: '1rem'}}>
+      <h2 className={styles['feature-h3']}>Progress Dashboard: Your Journey at a Glance</h2>
+      <p className={styles['feature-p']}>Simplifying the student's journey with an intuitive progress dashboard, the UWI Degree Tracker puts your academic achievements in a comprehensive and digestible visual display. Track your passed credits at each level, monitor outstanding foundation courses, and keep an eye on your overall advancement. Need additional guidance? Just a click away, reach out to an advisor or tap into the wisdom of the community forum. Your path to degree completion has never been clearer.</p>
     </div>
   </section>
+  <section className={styles.feature}>
+    <img className={styles.img} height={500} width={1200} src="courses.png" alt="Courses Home" />
+    <div style={{marginRight: '1rem'}}>
+      <h2 className={styles['feature-h3']}>Smart Course Track: Your Personalized Academic Roadmap</h2>
+      <p className={styles['feature-p']}>Navigate your academic journey with UWI Degree Tracker's Smart Course Track. Starting from semester one, our system tailors a course track based on your chosen major. Each semester, the track evolves, adapting to your success rate and always aiming to guide you towards the most effective path. With a vibrant color-coded system, quickly grasp your course performance and adjust your strategies. Adapt, conquer, and achieve your academic goals with precision.</p>
+    </div>
+  </section>
+  <section className={styles.feature}>
+    <img className={styles.img} height={500} width={1200} src="filterelectives.png" alt="filterelective.png" />
+    <div style={{marginRight: '1rem'}}>
+      <h2 className={styles['feature-h3']}>Elective Navigator: Find the Perfect Fit</h2>
+      <p className={styles['feature-p']}> Discover your ideal electives effortlessly with our Elective Navigator. UWI Degree Tracker intelligently identifies and filters electives that align with your qualifications, saving you precious time and effort. No more uncertainty, no more guesswork. Make informed decisions and customize your learning journey with precision and ease. Find your perfect fit and enrich your academic experience with UWI Degree Tracker.</p>
+    </div>
+  </section>
+  <section className={styles.feature}>
+    <img className={styles.img} height={500} width={1200} src="advisor.png" alt="filterelective.png" />
+    <div style={{marginRight: '1rem'}}>
+      <h2 className={styles['feature-h3']}>Advisor Connect: Empowering Guidance at Your Fingertips</h2>
+      <p className={styles['feature-p']}>Bridge the gap between students and advisors with Advisor Connect. This intuitive feature provides advisors with a comprehensive list of students seeking advice. It empowers advisors to step in and provide invaluable guidance with just a click. Enhance student success, foster supportive relationships, and create a vibrant learning community with UWI Degree Tracker.</p>
+    </div>
+  </section>
+  <div className={styles['about-us-section']}>
+  <h2>About Us</h2>
+  <div className={styles['about-us-content']}>
+    <p>We're a dedicated team of developers, educators, and students who are passionate about making the academic journey smoother and more enjoyable. With a shared commitment to innovation and student success, we designed the UWI Degree Tracker to empower students with the tools they need to stay on track and excel in their studies.</p>
+  </div>
+</div>
     </div>
   )
 }
